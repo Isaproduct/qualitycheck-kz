@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Проекты | QualityCheck KZ</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="animations.css">
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="logo">QC <span>QualityCheck KZ</span></a>
+    <ul>
+      <li><a href="services.html">Услуги</a></li>
+      <li><a href="about.html">О нас</a></li>
+      <li><a href="portfolio.html">Проекты</a></li>
+      <li><a href="index.html#contact" class="nav-cta">Заявка</a></li>
+    </ul>
+    <button class="burger" onclick="toggleMenu()">☰</button>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-content fade-in">
+      <span class="section-label">Наш опыт</span>
+      <h1>Выполненные проекты</h1>
+      <p>Реальные объекты, реальные результаты.<br>Каждый проект — это доверие клиента и наша репутация.</p>
+    </div>
+  </section>
+
+  <!-- FILTER -->
+  <section class="portfolio-section">
+    <div class="filter-bar fade-in">
+      <button class="filter-btn active" data-filter="all">Все</button>
+      <button class="filter-btn" data-filter="control">Технический контроль</button>
+      <button class="filter-btn" data-filter="supervision">Строительный надзор</button>
+      <button class="filter-btn" data-filter="expert">Экспертиза</button>
+      <button class="filter-btn" data-filter="incoming">Входной контроль</button>
+    </div>
+
+    <div class="portfolio-full-grid">
+
+      <div class="pf-card slide-up" data-category="control">
+        <div class="pf-img">
+          <img src="images/project1.jpg" alt="Проект 1" onerror="this.style.display='none'">
+          <div class="pf-placeholder">🏢</div>
+          <div class="pf-overlay">
+            <span class="pf-tag">Технический контроль</span>
+          </div>
+        </div>
+        <div class="pf-info">
+          <h3>Название объекта 1</h3>
+          <p>Город, год</p>
+          <p class="pf-desc">Краткое описание выполненных работ. Что проверяли, какой результат получили.</p>
+        </div>
+      </div>
+
+      <div class="pf-card slide-up" data-category="supervision">
+        <div class="pf-img">
+          <img src="images/project2.jpg" alt="Проект 2" onerror="this.style.display='none'">
+          <div class="pf-placeholder">🏗️</div>
+          <div class="pf-overlay">
+            <span class="pf-tag">Строительный надзор</span>
+          </div>
+        </div>
+        <div class="pf-info">
+          <h3>Название объекта 2</h3>
+          <p>Город, год</p>
+          <p class="pf-desc">Краткое описание выполненных работ. Что проверяли, какой результат получили.</p>
+        </div>
+      </div>
+
+      <div class="pf-card slide-up" data-category="expert">
+        <div class="pf-img">
+          <img src="images/project3.jpg" alt="Проект 3" onerror="this.style.display='none'">
+          <div class="pf-placeholder">📊</div>
+          <div class="pf-overlay">
+            <span class="pf-tag">Экспертиза</span>
+          </div>
+        </div>
+        <div class="pf-info">
+          <h3>Название объекта 3</h3>
+          <p>Город, год</p>
+          <p class="pf-desc">Краткое описание выполненных работ. Что проверяли, какой результат получили.</p>
+        </div>
+      </div>
+
+      <div class="pf-card slide-up" data-category="incoming">
+        <div class="pf-img">
+          <img src="images/project4.jpg" alt="Проект 4" onerror="this.style.display='none'">
+          <div class="pf-placeholder">📋</div>
+          <div class="pf-overlay">
+            <span class="pf-tag">Входной контроль</span>
+          </div>
+        </div>
+        <div class="pf-info">
+          <h3>Название объекта 4</h3>
+          <p>Город, год</p>
+          <p class="pf-desc">Краткое описание выполненных работ. Что проверяли, какой результат получили.</p>
+        </div>
+      </div>
+
+      <div class="pf-card slide-up" data-category="control">
+        <div class="pf-img">
+          <img src="images/project5.jpg" alt="Проект 5" onerror="this.style.display='none'">
+          <div class="pf-placeholder">🔬</div>
+          <div class="pf-overlay">
+            <span class="pf-tag">Технический контроль</span>
+          </div>
+        </div>
+        <div class="pf-info">
+          <h3>Название объекта 5</h3>
+          <p>Город, год</p>
+          <p class="pf-desc">Краткое описание выполненных работ. Что проверяли, какой результат получили.</p>
+        </div>
+      </div>
+
+      <div class="pf-card slide-up" data-category="supervision">
+        <div class="pf-img">
+          <img src="images/project6.jpg" alt="Проект 6" onerror="this.style.display='none'">
+          <div class="pf-placeholder">🏛️</div>
+          <div class="pf-overlay">
+            <span class="pf-tag">Строительный надзор</span>
+          </div>
+        </div>
+        <div class="pf-info">
+          <h3>Название объекта 6</h3>
+          <p>Город, год</p>
+          <p class="pf-desc">Краткое описание выполненных работ. Что проверяли, какой результат получили.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials">
+    <div class="section-header fade-in">
+      <span class="section-label">Отзывы</span>
+      <h2>Что говорят клиенты</h2>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card fade-in">
+        <div class="testimonial-stars">★★★★★</div>
+        <p>«Отличная работа! Выявили дефекты которые подрядчик пытался скрыть. Сэкономили нам очень много денег.»</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">А</div>
+          <div>
+            <strong>Алихан С.</strong>
+            <span>Частный застройщик</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card fade-in">
+        <div class="testimonial-stars">★★★★★</div>
+        <p>«Профессиональный подход, подробные отчёты с фото. Работаем с QualityCheck KZ уже 2 года.»</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">М</div>
+          <div>
+            <strong>Марат К.</strong>
+            <span>Строительная компания</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card fade-in">
+        <div class="testimonial-stars">★★★★★</div>
+        <p>«Помогли принять квартиру — нашли 15 замечаний которые застройщик устранил до подписания акта.»</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">Г</div>
+          <div>
+            <strong>Гульнара Т.</strong>
+            <span>Частный клиент</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="cta-inner fade-in">
+      <h2>Хотите стать нашим следующим проектом?</h2>
+      <p>Оставьте заявку — свяжемся в течение часа.</p>
+      <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:32px">
+        <a href="index.html#contact" class="btn">Оставить заявку</a>
+        <a href="tel:+77758209559" class="btn-outline">📞 Позвонить</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <a href="index.html" class="logo">QC <span>QualityCheck KZ</span></a>
+      <div class="footer-links">
+        <a href="services.html">Услуги</a>
+        <a href="about.html">О нас</a>
+        <a href="portfolio.html">Проекты</a>
+        <a href="index.html#contact">Контакты</a>
+      </div>
+      <p>© 2026 QualityCheck KZ</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

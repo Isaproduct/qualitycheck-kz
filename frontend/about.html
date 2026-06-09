@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>О нас | QualityCheck KZ</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="animations.css">
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="logo">QC <span>QualityCheck KZ</span></a>
+    <ul>
+      <li><a href="services.html">Услуги</a></li>
+      <li><a href="about.html">О нас</a></li>
+      <li><a href="portfolio.html">Проекты</a></li>
+      <li><a href="index.html#contact" class="nav-cta">Заявка</a></li>
+    </ul>
+    <button class="burger" onclick="toggleMenu()">☰</button>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-content fade-in">
+      <span class="section-label">О компании</span>
+      <h1>Кто мы такие</h1>
+      <p>Независимая компания по контролю качества в Казахстане.<br>Работаем в интересах клиента — честно и профессионально.</p>
+    </div>
+  </section>
+
+  <!-- MISSION -->
+  <section class="mission">
+    <div class="mission-inner">
+      <div class="mission-text fade-in">
+        <span class="section-label">Миссия</span>
+        <h2>Почему мы делаем это</h2>
+        <p>Мы верим, что каждый клиент — будь то крупный бизнес или частное лицо — заслуживает честной и объективной оценки качества. Наша миссия — устранить разрыв между обещаниями подрядчиков и реальностью.</p>
+        <p style="margin-top:16px">Мы не зависим ни от поставщиков, ни от строителей — только от доверия наших клиентов.</p>
+      </div>
+      <div class="mission-img fade-in">
+        <img src="images/mission.jpg" alt="Миссия" onerror="this.style.display='none'">
+        <div class="mission-placeholder">
+          <span>🎯</span>
+          <p>Фото команды</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALUES -->
+  <section class="values">
+    <div class="section-header fade-in">
+      <span class="section-label">Ценности</span>
+      <h2>На чём мы стоим</h2>
+    </div>
+    <div class="values-grid">
+      <div class="value-card slide-up">
+        <div class="value-icon">⚖️</div>
+        <h3>Независимость</h3>
+        <p>Никаких конфликтов интересов. Мы работаем только в интересах клиента.</p>
+      </div>
+      <div class="value-card slide-up">
+        <div class="value-icon">🔍</div>
+        <h3>Точность</h3>
+        <p>Каждая проверка — детальная и задокументированная. Никаких приблизительных оценок.</p>
+      </div>
+      <div class="value-card slide-up">
+        <div class="value-icon">🤝</div>
+        <h3>Честность</h3>
+        <p>Говорим правду, даже если она неудобна. Клиент должен знать реальное положение дел.</p>
+      </div>
+      <div class="value-card slide-up">
+        <div class="value-icon">⚡</div>
+        <h3>Оперативность</h3>
+        <p>Быстро реагируем, чётко соблюдаем сроки и держим клиента в курсе на каждом этапе.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="team">
+    <div class="section-header fade-in">
+      <span class="section-label">Команда</span>
+      <h2>Наши специалисты</h2>
+    </div>
+    <div class="team-grid">
+      <div class="team-card fade-in">
+        <div class="team-photo">
+          <img src="images/team1.jpg" alt="Специалист 1" onerror="this.style.display='none'">
+          <div class="team-placeholder">👤</div>
+        </div>
+        <h3>Имя Фамилия</h3>
+        <span class="team-role">Руководитель проектов</span>
+        <p>10+ лет в области технического контроля и строительного надзора.</p>
+      </div>
+      <div class="team-card fade-in">
+        <div class="team-photo">
+          <img src="images/team2.jpg" alt="Специалист 2" onerror="this.style.display='none'">
+          <div class="team-placeholder">👤</div>
+        </div>
+        <h3>Имя Фамилия</h3>
+        <span class="team-role">Главный инспектор</span>
+        <p>Сертифицированный специалист по входному контролю и экспертизе.</p>
+      </div>
+      <div class="team-card fade-in">
+        <div class="team-photo">
+          <img src="images/team3.jpg" alt="Специалист 3" onerror="this.style.display='none'">
+          <div class="team-placeholder">👤</div>
+        </div>
+        <h3>Имя Фамилия</h3>
+        <span class="team-role">Технический эксперт</span>
+        <p>Специализация — независимая экспертиза и строительный надзор.</p>
+      </div>
+    </div>
+    <p class="team-note fade-in">* Замените placeholder на реальные фото и имена — положите фото в папку <code>frontend/images/</code></p>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats">
+    <div class="stats-grid">
+      <div class="stat-item fade-in">
+        <div class="stat-num" data-target="500">0</div>
+        <div class="stat-label">Проектов выполнено</div>
+      </div>
+      <div class="stat-item fade-in">
+        <div class="stat-num" data-target="10">0</div>
+        <div class="stat-label">Лет на рынке</div>
+      </div>
+      <div class="stat-item fade-in">
+        <div class="stat-num" data-target="98">0</div>
+        <div class="stat-label">% довольных клиентов</div>
+      </div>
+      <div class="stat-item fade-in">
+        <div class="stat-num" data-target="50">0</div>
+        <div class="stat-label">Партнёров</div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <a href="index.html" class="logo">QC <span>QualityCheck KZ</span></a>
+      <div class="footer-links">
+        <a href="services.html">Услуги</a>
+        <a href="about.html">О нас</a>
+        <a href="portfolio.html">Проекты</a>
+        <a href="index.html#contact">Контакты</a>
+      </div>
+      <p>© 2026 QualityCheck KZ</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

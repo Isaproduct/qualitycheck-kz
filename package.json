@@ -1,0 +1,7 @@
+{
+  "name": "qualitycheck-kz",
+  "version": "1.0.0",
+  "dependencies": {
+    "mongodb": "^6.21.0"
+  }
+}

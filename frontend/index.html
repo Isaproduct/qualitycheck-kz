@@ -5,52 +5,143 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>QualityCheck KZ | QC</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="animations.css">
 </head>
 <body>
 
   <nav>
-    <a href="#" class="logo">QC <span>QualityCheck KZ</span></a>
+    <a href="index.html" class="logo">QC <span>QualityCheck KZ</span></a>
     <ul>
-      <li><a href="#services">Услуги</a></li>
-      <li><a href="#about">О нас</a></li>
-      <li><a href="#contact">Контакты</a></li>
+      <li><a href="services.html">Услуги</a></li>
+      <li><a href="about.html">О нас</a></li>
+      <li><a href="portfolio.html">Проекты</a></li>
+      <li><a href="#contact" class="nav-cta">Заявка</a></li>
     </ul>
+    <button class="burger" onclick="toggleMenu()">☰</button>
   </nav>
 
+  <!-- HERO -->
   <section class="hero">
-    <div class="hero-content">
+    <div class="hero-content fade-in">
       <span class="badge">Контроль качества · Казахстан</span>
       <h1>Контроль качества<br><span>на всех этапах</span></h1>
       <p>Независимая экспертиза и технический контроль для бизнеса и частных лиц.</p>
-      <a href="#contact" class="btn">Оставить заявку</a>
+      <div class="hero-btns">
+        <a href="#contact" class="btn">Оставить заявку</a>
+        <a href="services.html" class="btn-outline">Наши услуги</a>
+      </div>
     </div>
   </section>
 
+  <!-- STATS -->
+  <section class="stats">
+    <div class="stats-grid">
+      <div class="stat-item fade-in">
+        <div class="stat-num" data-target="500">0</div>
+        <div class="stat-label">Проектов</div>
+      </div>
+      <div class="stat-item fade-in">
+        <div class="stat-num" data-target="10">0</div>
+        <div class="stat-label">Лет опыта</div>
+      </div>
+      <div class="stat-item fade-in">
+        <div class="stat-num" data-target="98">0</div>
+        <div class="stat-label">% довольных клиентов</div>
+      </div>
+      <div class="stat-item fade-in">
+        <div class="stat-num" data-target="50">0</div>
+        <div class="stat-label">Партнёров</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES PREVIEW -->
   <section class="services" id="services">
-    <h2>Наши услуги</h2>
+    <div class="section-header fade-in">
+      <span class="section-label">Услуги</span>
+      <h2>Что мы делаем</h2>
+    </div>
     <div class="cards">
-      <div class="card">
+      <div class="card slide-up">
+        <div class="card-icon">🔬</div>
         <h3>Технический контроль</h3>
         <p>Проверка материалов и работ по стандартам.</p>
+        <a href="services.html" class="card-link">Подробнее →</a>
       </div>
-      <div class="card">
+      <div class="card slide-up">
+        <div class="card-icon">📋</div>
         <h3>Входной контроль</h3>
         <p>Проверка качества поставок до начала работ.</p>
+        <a href="services.html" class="card-link">Подробнее →</a>
       </div>
-      <div class="card">
-        <h3>Независимая экспертиза</h3>
-        <p>Объективная оценка без конфликта интересов.</p>
-      </div>
-      <div class="card">
+      <div class="card slide-up">
+        <div class="card-icon">🏗️</div>
         <h3>Строительный надзор</h3>
         <p>Контроль на всех этапах строительства.</p>
+        <a href="services.html" class="card-link">Подробнее →</a>
       </div>
+      <div class="card slide-up">
+        <div class="card-icon">📊</div>
+        <h3>Независимая экспертиза</h3>
+        <p>Объективная оценка без конфликта интересов.</p>
+        <a href="services.html" class="card-link">Подробнее →</a>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:40px">
+      <a href="services.html" class="btn">Все услуги</a>
     </div>
   </section>
 
+  <!-- PORTFOLIO PREVIEW -->
+  <section class="portfolio-preview">
+    <div class="section-header fade-in">
+      <span class="section-label">Проекты</span>
+      <h2>Наши работы</h2>
+    </div>
+    <div class="portfolio-grid">
+      <div class="portfolio-card fade-in">
+        <div class="portfolio-img">
+          <img src="images/project1.jpg" alt="Проект 1" onerror="this.parentElement.style.background='#1E3A5F'">
+          <div class="portfolio-overlay">
+            <span>Технический контроль</span>
+          </div>
+        </div>
+        <h3>Объект 1</h3>
+        <p>Краткое описание проекта</p>
+      </div>
+      <div class="portfolio-card fade-in">
+        <div class="portfolio-img">
+          <img src="images/project2.jpg" alt="Проект 2" onerror="this.parentElement.style.background='#1E3A5F'">
+          <div class="portfolio-overlay">
+            <span>Строительный надзор</span>
+          </div>
+        </div>
+        <h3>Объект 2</h3>
+        <p>Краткое описание проекта</p>
+      </div>
+      <div class="portfolio-card fade-in">
+        <div class="portfolio-img">
+          <img src="images/project3.jpg" alt="Проект 3" onerror="this.parentElement.style.background='#1E3A5F'">
+          <div class="portfolio-overlay">
+            <span>Экспертиза</span>
+          </div>
+        </div>
+        <h3>Объект 3</h3>
+        <p>Краткое описание проекта</p>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:40px">
+      <a href="portfolio.html" class="btn">Все проекты</a>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
   <section class="contact" id="contact">
-    <h2>Оставить заявку</h2>
-    <form id="contactForm">
+    <div class="section-header fade-in">
+      <span class="section-label">Контакты</span>
+      <h2>Оставить заявку</h2>
+    </div>
+    <form id="contactForm" class="fade-in">
       <div class="form-row">
         <input type="text" id="name" placeholder="Ваше имя *" required>
         <input type="tel" id="phone" placeholder="Телефон * (+7...)" required>
@@ -67,14 +158,23 @@
       <button type="submit" class="btn">Отправить заявку</button>
       <p id="formMsg"></p>
     </form>
-    <div class="contact-info">
+    <div class="contact-info fade-in">
       <p>📞 +7 775 820 9559</p>
       <p>🇰🇿 Казахстан</p>
     </div>
   </section>
 
   <footer>
-    <p>© 2026 QualityCheck KZ. Все права защищены.</p>
+    <div class="footer-inner">
+      <a href="index.html" class="logo">QC <span>QualityCheck KZ</span></a>
+      <div class="footer-links">
+        <a href="services.html">Услуги</a>
+        <a href="about.html">О нас</a>
+        <a href="portfolio.html">Проекты</a>
+        <a href="#contact">Контакты</a>
+      </div>
+      <p>© 2026 QualityCheck KZ</p>
+    </div>
   </footer>
 
   <script src="main.js"></script>
