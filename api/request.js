@@ -49,21 +49,6 @@ module.exports = async function handler(req, res) {
 
   } catch (err) {
     console.error(err);
-    return res.status(500).json({ error: 'Ошибка сервера: ' + err.message });
+    return res.status(500).json({ error: 'Ошибка: ' + err.message });
   }
 };
-
-    const newRequest = {
-      name,
-      phone,
-      service,
-      message: message || '',
-      date: new Date()
-    };
-
-    await collection.insertOne(newRequest);
-    return res.status(200).json({ success: true, message: 'Заявка принята!' });
-  }
-
-  return res.status(405).json({ error: 'Method not allowed' });
-}
